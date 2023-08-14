@@ -1,0 +1,73 @@
+.news {
+    min-height: 100vh;
+    height: 100vh;
+    background-image: url(../img/news/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 25%;
+    overflow: hidden;
+    padding-bottom: 11rem;
+    margin-bottom: 8.4rem;
+    .title {
+        margin-bottom: 6rem;
+    }
+
+    &__pagination  {
+        position: relative;
+        width: 16.8rem;
+        left: initial;
+        padding-top: 6rem;
+    }
+
+    &__wrapper {
+        display: flex;
+       justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__scroll {
+        border-radius: 6rem;
+        background: rgba(222, 218, 214, 0.50);
+        backdrop-filter: blur(3px);
+        width: 16.6rem;
+        height: 8.6rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.6rem;
+        margin-top: 2rem;
+    }
+
+    &__scroll-bottom {
+        border-radius: 50%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 7.4rem;
+        height: 7.4rem;
+
+        svg {
+            width: 3.8rem;
+            height: 3.8rem;
+        }
+    }
+
+    &__scroll-top {
+        border-radius: 50%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 7.4rem;
+        height: 7.4rem;
+
+        svg {
+            width: 1.6rem;
+            height: 3rem;
+        }
+    }
+
+    &__swiper {
+        max-width: 129.5rem;
+        overflow: hidden;
+    }
+}

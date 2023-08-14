@@ -1,0 +1,79 @@
+.popular {
+    min-height: 100vh;
+    height: 100vh;
+    margin-bottom: 19.4rem;
+   .container {
+    position: relative;
+   }
+    &__wrapper {
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        margin-bottom: 5.7rem;
+        strong {
+            display: block;
+            font-family: 'PP Neue Montreal';
+            font-size: 6rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%;
+            margin-bottom: 1.5rem;
+            max-width: 55rem;
+            text-align: center;
+        }
+
+        span {
+            display: block;
+            font-family: 'PP Neue Montreal';
+            font-size: 2.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%; 
+        }
+    }
+
+    &__scroll {
+        border-radius: 6rem;
+        background: rgba(222, 218, 214, 0.50);
+        backdrop-filter: blur(3px);
+        width: 16.6rem;
+        height: 8.6rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.6rem;
+    }
+
+    &__scroll-bottom {
+        border-radius: 50%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 7.4rem;
+        height: 7.4rem;
+
+        svg {
+            width: 3.8rem;
+            height: 3.8rem;
+        }
+    }
+
+    &__scroll-top {
+        border-radius: 50%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 7.4rem;
+        height: 7.4rem;
+
+        svg {
+            width: 1.6rem;
+            height: 3rem;
+        }
+    }
+}
