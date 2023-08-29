@@ -1,13 +1,17 @@
 .news {
-    min-height: 100vh;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
     background-image: url(../img/news/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 25%;
     overflow: hidden;
-    padding-bottom: 11rem;
-    margin-bottom: 8.4rem;
+    .container {
+        padding-top: 5rem;
+    }
     .title {
         margin-bottom: 6rem;
     }
@@ -28,14 +32,16 @@
     &__scroll {
         border-radius: 6rem;
         background: rgba(222, 218, 214, 0.50);
-        backdrop-filter: blur(3px);
+
+       
         width: 16.6rem;
-        height: 8.6rem;
+        height: 8.6vh;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         padding: 0.6rem;
-        margin-top: 2rem;
+        margin-top: 2vh;
+        
     }
 
     &__scroll-bottom {
@@ -43,12 +49,14 @@
         display: flex;
         align-items:center;
         justify-content: center;
-        width: 7.4rem;
-        height: 7.4rem;
+        width: 7.4vh;
+        height: 7.4vh;
+        background: none;
+
 
         svg {
             width: 3.8rem;
-            height: 3.8rem;
+            height: 3.8vh;
         }
     }
 
@@ -57,12 +65,14 @@
         display: flex;
         align-items:center;
         justify-content: center;
-        width: 7.4rem;
-        height: 7.4rem;
+        width: 7.4vh;
+        height: 7.4vh;
+       
+        background: none;
 
         svg {
             width: 1.6rem;
-            height: 3rem;
+            height: 3vh;
         }
     }
 

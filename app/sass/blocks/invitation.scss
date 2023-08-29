@@ -1,12 +1,17 @@
 .invitation {
-    min-height: 100vh;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
     background-image: url(../img/invitation/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-   
+    min-height: 100vh;
     overflow: hidden;
-
+    .container {
+        min-height: auto;
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
