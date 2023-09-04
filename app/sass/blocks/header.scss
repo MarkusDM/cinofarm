@@ -100,6 +100,10 @@
         display: flex;
     }
 
+    &__wrapper-mob {
+        display: none;
+    }
+
     &__lists-left {
         display: flex;
         margin-right: 8rem;

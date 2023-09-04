@@ -8,14 +8,14 @@
    .container {
     position: relative;
     min-height: 100vh;
-    padding-top: 5rem;
+    padding-top: 3rem;
    }
 
    &__pagination {
     top: 50%;
    }
     .title {
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
         h2 {
             margin: 0 auto;
         }
@@ -44,12 +44,23 @@
         width: 7.4vh;
         height: 7.4vh;
         background: none;
-
+        &:hover {
+            svg {
+                animation: paused;
+                transition: 0.2s;
+            }
+        }
 
         svg {
             width: 3.8rem;
             height: 3.8vh;
+            animation: arrow-down 2s infinite;
+            animation-delay: -0.2s;
+            transition: 0.2s;
+          
         }
+
+        
     }
 
     &__scroll-top {
@@ -61,10 +72,19 @@
         height: 7.4vh;
        
         background: none;
-
+        &:hover {
+            svg {
+                animation: paused;
+                transition: 0.2s;
+            }
+        }
         svg {
             width: 1.6rem;
             height: 3vh;
+            animation: arrow-top 2s infinite;
+            animation-delay: -0.2s;
+            transition: 0.2s;
+          
         }
     }
 }

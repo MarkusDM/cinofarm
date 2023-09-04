@@ -14,6 +14,10 @@
         min-height: auto;
     }
 
+    &__top-inner-mob {
+        display: none;
+    }
+
     &__bottom {
         width: 156rem;
         border-top: 0.1rem solid rgba(109, 109, 109, 1);
@@ -27,7 +31,7 @@
     &__scroll {
         width: 7.4rem;
         height: 7.4rem;
-        position: absolute;
+       
         display: flex;
         justify-content: center;
         align-items:center;
@@ -37,10 +41,24 @@
         left: 50%;
         z-index: 3;
         top: -4rem;
+        &:hover {
+            svg {
+                animation: paused;
+                transition: 0.2s;
+            }
+        }
         svg {
             width: 1.6rem;
             height: 3rem;
+            animation: arrow-top 2s infinite;
+            animation-delay: -0.2s;
+            transition: 0.2s;
         }
+
+    
+
+       
+     
     }
 
     &__policy {
@@ -51,8 +69,8 @@
     }
 
     &__re {
-        width: 17.2rem;
-        height: 4.38rem;
+        width: 19.2rem;
+        height: 6.38rem;
     }
 
     &__logo {

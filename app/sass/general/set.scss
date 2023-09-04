@@ -18,8 +18,9 @@ html {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow-y: auto;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 body {
@@ -154,6 +155,10 @@ input[type="number"] {
         font-size: 1.5625vw;
         font-size: calc((100/428) * 5vw); // где 320 это ширина моб версии макета
         -webkit-text-size-adjust: none;
+       
+        height: auto;
+        overflow-y: initial;
+        scroll-snap-type: initial;
     }
 
     body {
@@ -161,7 +166,7 @@ input[type="number"] {
     }
 
     .container {
-        padding: 0 4rem; // в моб версии отступ от края задаем для всех контейнеров, а там где не нужно можем точечно убрать
+        padding: 0 2rem; // в моб версии отступ от края задаем для всех контейнеров, а там где не нужно можем точечно убрать
         width: 100%;
     }
 }
