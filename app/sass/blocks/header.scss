@@ -22,23 +22,16 @@
         align-items:center;
     }
 
-    &__geo {
-        font-family: 'Inter',sans-serif;
-        font-size: 2.4rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 125% ;
-        margin-right: 1.2rem;
-    }
 
-    &__phone {
-        position: relative;
-        font-family: 'Inter',sans-serif;
-        font-size: 2.6rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 115.385%; 
+
+ 
+
+
+    &__data-item {
+        display: flex;
+        align-items:center;
         padding-right: 2.6rem;
+        position: relative;
         &:hover {
             &::before {
                 transform: rotate(180deg);
@@ -57,22 +50,68 @@
             top: 33%;
             transition: all 0.2s;
         }
+
+
+        a {
+            font-family: 'Inter',sans-serif;
+            font-size: 2.6rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 115.385%; 
+        }
+
+        span {
+            font-family: 'Inter',sans-serif;
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125% ;
+            margin-right: 1.2rem;
+        }
     }
 
-    &__phone-lists {
+    &__data-block {
         position: absolute;
-        background: #fff;
-        border-radius: 0px 6rem;
-        padding: 2.5rem;
+        padding: 3.2rem;
+        min-width: 50.6rem;
         top: 4rem;
         display: none;
         z-index: 4;
+        background: #fff;
+        border-radius: 3rem;
+        gap: 2rem;
         li {
-            font-size: 1.6rem;
-            font-weight: normal;
-            margin-bottom: 1rem;
+            display: flex;
+            margin-bottom: 2rem;
+            transition: 0.2s;
+            &:hover {
+                transition: 0.2s;
+                color:#840D06;
+            }
+            span {
+                font-family: 'Inter',sans-serif;
+                font-size: 2.4rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 125%; 
+            }
+
+            a {
+               
+                font-family: 'Inter',sans-serif;
+                font-size: 2.6rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 115.385%; 
+            }
+        }
+
+        li:last-child {
+            margin-bottom: 0;
         }
     }
+
+   
 
     &__inner-date {
         font-family: 'Inter',sans-serif;
@@ -103,6 +142,8 @@
     &__wrapper-mob {
         display: none;
     }
+
+
 
     &__lists-left {
         display: flex;

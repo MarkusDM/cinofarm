@@ -127,6 +127,26 @@
 }
 
 
+.link {
+	border-radius: 5rem;
+	background: #FFF;
+	padding: 0.8rem 3.5rem;
+  
+	   
+		font-family: 'PP Neue Montreal',sans-serif;
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 110%; 
+		margin-bottom: 0.8rem;
+		transition: 0.3s;
+		&:hover {
+			border-radius: 5rem 0px;
+			transition: 0.3s;
+		}
+}
+
+
 
 .checkbox {
 	display: block;

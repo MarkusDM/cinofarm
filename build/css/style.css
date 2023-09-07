@@ -602,6 +602,23 @@ input[type="number"] {
   100% {
     top: 0; } }
 
+.link {
+  border-radius: 5rem;
+  background: #FFF;
+  padding: 0.8rem 3.5rem;
+  font-family: 'PP Neue Montreal',sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  margin-bottom: 0.8rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .link:hover {
+    border-radius: 5rem 0px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+
 .checkbox {
   display: block;
   position: relative;
@@ -712,27 +729,21 @@ input[type="number"] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .header__geo {
-    font-family: 'Inter',sans-serif;
-    font-size: 2.4rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%;
-    margin-right: 1.2rem; }
-  .header__phone {
-    position: relative;
-    font-family: 'Inter',sans-serif;
-    font-size: 2.6rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 115.385%;
-    padding-right: 2.6rem; }
-    .header__phone:hover::before {
+  .header__data-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 2.6rem;
+    position: relative; }
+    .header__data-item:hover::before {
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg);
       -webkit-transition: all 0.2s;
       transition: all 0.2s; }
-    .header__phone::before {
+    .header__data-item::before {
       position: absolute;
       content: '';
       width: 1.4rem;
@@ -744,18 +755,54 @@ input[type="number"] {
       top: 33%;
       -webkit-transition: all 0.2s;
       transition: all 0.2s; }
-  .header__phone-lists {
+    .header__data-item a {
+      font-family: 'Inter',sans-serif;
+      font-size: 2.6rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 115.385%; }
+    .header__data-item span {
+      font-family: 'Inter',sans-serif;
+      font-size: 2.4rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%;
+      margin-right: 1.2rem; }
+  .header__data-block {
     position: absolute;
-    background: #fff;
-    border-radius: 0px 6rem;
-    padding: 2.5rem;
+    padding: 3.2rem;
+    min-width: 50.6rem;
     top: 4rem;
     display: none;
-    z-index: 4; }
-    .header__phone-lists li {
-      font-size: 1.6rem;
-      font-weight: normal;
-      margin-bottom: 1rem; }
+    z-index: 4;
+    background: #fff;
+    border-radius: 3rem;
+    gap: 2rem; }
+    .header__data-block li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 2rem;
+      -webkit-transition: 0.2s;
+      transition: 0.2s; }
+      .header__data-block li:hover {
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        color: #840D06; }
+      .header__data-block li span {
+        font-family: 'Inter',sans-serif;
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%; }
+      .header__data-block li a {
+        font-family: 'Inter',sans-serif;
+        font-size: 2.6rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 115.385%; }
+    .header__data-block li:last-child {
+      margin-bottom: 0; }
   .header__inner-date {
     font-family: 'Inter',sans-serif;
     font-size: 2.4rem;
@@ -2414,6 +2461,105 @@ input[type="number"] {
 
 .catalog {
   padding-top: 25.1rem; }
+
+.category {
+  margin-bottom: 3rem; }
+  .category__lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #1a1a1a;
+    font-family: 'PP Neue Montreal';
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; }
+    .category__lists li {
+      position: relative;
+      margin-right: 1.6rem;
+      padding-right: 3.5rem; }
+      .category__lists li::before {
+        position: absolute;
+        content: '';
+        width: 1.9rem;
+        height: 1.3rem;
+        background-image: url(../img/categoryarrow.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        right: 0;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+                transform: translate(0, -50%); }
+    .category__lists li:last-child {
+      color: #6D6D6D;
+      margin-right: 0;
+      padding-right: 0; }
+      .category__lists li:last-child::before {
+        display: none; }
+
+.news-p {
+  padding-top: 22.4rem;
+  padding-bottom: 20rem; }
+  .news-p .title {
+    margin-bottom: 6rem; }
+  .news-p__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: 0.1rem solid rgba(109, 109, 109, 0.5);
+    border-bottom: 0.1rem solid rgba(109, 109, 109, 0.5);
+    padding: 3.2rem 0; }
+    .news-p__box .link {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin-top: auto; }
+  .news-p__box-image {
+    width: 50.2rem;
+    height: 35.9rem;
+    border-radius: 0px 6rem;
+    margin-right: 3.2rem; }
+    .news-p__box-image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0px 6rem; }
+  .news-p__box-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 1rem; }
+  .news-p__box-category {
+    color: #6D6D6D;
+    font-size: 2.2rem;
+    margin-bottom: 3.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; }
+  .news-p__box-title {
+    margin-bottom: 2.4rem;
+    max-width: 76.3rem;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; }
+  .news-p__box-text {
+    max-width: 76.3rem;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; }
+  .news-p__wrapper {
+    margin-bottom: 4rem; }
+  .news-p .all-btn {
+    margin: 0 auto; }
+    .news-p .all-btn span {
+      margin-right: 3.3rem; }
+    .news-p .all-btn__arrow {
+      margin-left: 0; }
 
 .footer {
   scroll-snap-align: start; }
