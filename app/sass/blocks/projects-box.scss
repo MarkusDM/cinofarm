@@ -56,6 +56,11 @@
         font-size: 2vh;
         font-style: normal;
         font-weight: 500;
-        line-height: 110%; 
+        line-height: 110%;
+        transition: 0.3s;
+        &:hover {
+            border-radius: 5rem 0px;
+            transition: 0.3s;
+        } 
     }
 }

@@ -108,3 +108,25 @@ $('.footer__scroll').on('click', function() {
     scrollTop: $("#focal").offset().top
   }, 200);
 }); 
+
+
+
+$(".popular-box__like").on('click', function() {
+  $(this).toggleClass("active");
+
+});
+
+$(".literature-box__like").on('click', function() {
+  $(this).toggleClass("active");
+
+});
+
+$(".popular-box__basket").on('click', function() {
+  $(this).toggleClass("active");
+
+});
+
+$(".literature-box__basket").on('click', function() {
+  $(this).toggleClass("active");
+
+});

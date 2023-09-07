@@ -65,20 +65,17 @@
         height: 7.4vh;
         background: none;
         &:hover {
-            svg {
-                animation: paused;
-                transition: 0.2s;
-            }
-        }
-
-        svg {
-            width: 3.8rem;
-            height: 3.8vh;
-            animation: arrow-down 2s infinite;
-            animation-delay: -0.2s;
-            transition: 0.2s;
-          
-        }
+           
+            background: #fff;
+            transition: 0.5s;
+        
+    }
+    svg {
+        width: 1.6rem;
+        height: 3rem;
+       
+      
+    }
     }
 
     &__scroll-top {
@@ -88,20 +85,18 @@
         justify-content: center;
         width: 7.4vh;
         height: 7.4vh;
-       
+        transition: 0.5s;
         background: none;
         &:hover {
-            svg {
-                animation: paused;
-                transition: 0.2s;
-            }
+           
+                background: #fff;
+                transition: 0.5s;
+            
         }
         svg {
             width: 1.6rem;
-            height: 3vh;
-            animation: arrow-top 2s infinite;
-            animation-delay: -0.2s;
-            transition: 0.2s;
+            height: 3rem;
+           
           
         }
     }

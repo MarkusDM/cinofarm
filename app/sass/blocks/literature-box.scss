@@ -136,6 +136,15 @@
         svg {
             width: 3rem;
             height: 3.1vh;
+            fill: rgba(26, 26, 26, 1);
+        }
+    }
+
+
+    &__like.active {
+        background:#840D06;
+        svg {
+            fill: #fff;
         }
     }
 
@@ -151,6 +160,13 @@
         svg {
             width: 3rem;
             height: 3.1vh;
+        }
+    }
+
+    &__basket.active {
+        background:#840D06;
+        svg {
+            fill: #fff;
         }
     }
 

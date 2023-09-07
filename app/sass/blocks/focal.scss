@@ -26,8 +26,8 @@
     &__title-big {
         color: #881104;
         text-align: center;
-        font-family: 'Proun', arial;
-        font-size: 3.6vh;
+        font-family: 'Proun';
+        font-size: 3.6rem;
         font-style: normal;
         font-weight: 700;
         line-height: 110%;
@@ -35,10 +35,15 @@
         display: flex;
         justify-content: center;
         align-items:center;
-        padding-top: 9rem;
+        padding-top: 1rem;
         width: 50rem;
         height: 29.8vh;
         margin-right: 3rem;
+        transition: ease-in-out 0.3s;
+        &:hover {
+            transform: scale(1.1);
+            transition: ease-in-out 0.3s;
+        }
     }
 
     &__box {
@@ -50,10 +55,13 @@
         margin-bottom: 3rem;
         overflow: hidden;
         &:hover {
-            
+            .focal__box-hover-text {
+                margin-top: initial;
+                transition: 0.5s;
+            }
 
             .focal__box-hover {
-                transition: 1s;
+                transition: 0.5s;
                 opacity: 1;
             }
         }
@@ -119,8 +127,8 @@
     }
 
     &__scroll {
-        width: 7.4rem;
-        height: 7.4rem;
+        width: 7.4vh;
+        height: 7.4vh;
         border-radius: 50%;
         background: rgba(222, 218, 214, 0.50);
         backdrop-filter: blur(3px);
@@ -130,20 +138,29 @@
         margin: 0 auto;
         margin-top: 2rem;
         &:hover {
-            svg {
-                animation: paused;
-                transition: 0.2s;
+            .focal__scroll-box {
+                background: #fff;
+                transition: 0.5s;
             }
         }
 
        
      
+       
+    }
+
+    &__scroll-box {
+        width: 6.2vh;
+        height: 6.2vh;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        transition: 0.5s;
         svg {
-            width: 1.6rem;
+            width: 2rem;
             height: 3rem;
-            animation: arrow-down 2s infinite;
-            animation-delay: -0.2s;
-            transition: 0.2s;
+           
         }
     }
 
@@ -155,8 +172,10 @@
         height: 29.8vh;
         border-radius: 0px 6rem;
         top: 0;
-        transition: 1s;
+        transition: 0.5s;
         opacity: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     &__box-hover-image {
@@ -176,6 +195,8 @@
         z-index: 6;
         padding-top: 4rem;
         padding-left: 4rem;
+        margin-top: 15rem;
+        transition: 0.5s;
         strong {
             font-size: 3rem;
             font-style: normal;

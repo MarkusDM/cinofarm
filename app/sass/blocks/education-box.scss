@@ -114,6 +114,11 @@
             font-weight: 500;
             line-height: 110%; 
             margin-bottom: 0.8vh;
+            transition: 0.3s;
+            &:hover {
+                border-radius: 5rem 0px;
+                transition: 0.3s;
+            }
     }
 
     &__status {

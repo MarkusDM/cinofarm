@@ -52,10 +52,18 @@
         background: #FFF;
         top: 2rem;
         right: 3.2rem;
+
         svg {
             width: 3rem;
             height: 3rem;
             fill: rgba(26, 26, 26, 1);
+        }
+    }
+
+    &__like.active {
+        background:#840D06;
+        svg {
+            fill: #fff;
         }
     }
 
@@ -68,6 +76,7 @@
         font-weight: 500;
         line-height: 130%;
         padding-left: 2rem;
+        margin-bottom: 1.9rem;
     }
 
     &__inner {
@@ -131,6 +140,14 @@
         svg {
             width: 3rem;
             height: 3rem;
+        }
+    }
+
+
+    &__basket.active {
+        background:#840D06;
+        svg {
+            fill: #fff;
         }
     }
 }
