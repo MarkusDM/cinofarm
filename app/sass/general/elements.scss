@@ -242,3 +242,133 @@
 		margin-bottom: 4rem;
 	}
 }
+
+
+.global-search {
+	margin-top: 6rem;
+	margin-bottom: 4.3rem;
+	position: relative;
+	&::before {
+		position: absolute;
+		content:'';
+		width: 2.8rem;
+		height: 2.8rem;
+		background-image: url(../img/search.svg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		left: 3.2rem;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+	input {
+		width: 156rem;
+		padding: 2.4rem 3.2rem;
+		border-radius: 6rem;
+		background: #F9F9F8;
+		border: none;
+		font-size: 2.6rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 130%;
+		display: block;
+		padding-left: 8rem;
+	}
+	
+}
+
+.pagination-page {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	margin-top: 4rem;
+
+	&__prev,
+	&__next {
+		width: 7.4rem;
+		height: 7.4rem;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		background: rgba(249, 249, 248, 1);
+		cursor: pointer;
+		svg {
+			width: 1.6rem;
+			height: 3rem;
+		}
+	}
+
+	&__prev {
+		margin-right: 3.2rem;
+		&:hover {
+			> svg {
+			  transform: translateX(-0.4rem);
+			}
+		  }
+		svg {
+			transition: transform .5s ease;
+		}
+	}
+
+	&__numbers {
+		display: flex;
+		a  {
+			display: inline-block;
+			font-size: 3rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 110%;
+			margin-right: 3.2rem;
+			transition: 0.2s;
+			&:hover {
+				transition: 0.2s;
+				color:#840D06;
+			}
+		}
+
+		a:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__next {
+		margin-left: 3.2rem;
+		&:hover {
+			> svg {
+			  transform: translateX(0.4rem);
+			}
+		  }
+		svg {
+			transition: transform .5s ease;
+		}
+	}
+}
+
+
+.like {
+	width: 6.6rem;
+	height: 6.6rem;
+	border-radius: 50%;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	
+	background: #FFF;
+	top: 2rem;
+	right: 3.2rem;
+
+	svg {
+		width: 3rem;
+		height: 3rem;
+		fill: rgba(26, 26, 26, 1);
+	}
+}
+
+.like.active {
+	background:#840D06;
+	svg {
+		fill: #fff;
+	}
+}

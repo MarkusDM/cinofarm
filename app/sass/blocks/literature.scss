@@ -17,8 +17,8 @@
 
 
     &__pagination {
-        top: 44%;
-        transform: translate(0%, -44%);
+        top: 50%;
+        transform: translate(0%, -50%);
        }
 
 
@@ -84,4 +84,17 @@
 
 
 
+}
+
+
+.literature--two {
+    height: initial;
+    scroll-snap-align: initial;
+    display: block;
+    margin-bottom: 20rem;
+
+    .container {
+        min-height: auto;
+        padding-top: 0;
+    }
 }
