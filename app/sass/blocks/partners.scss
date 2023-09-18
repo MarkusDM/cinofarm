@@ -1,9 +1,6 @@
 .partners {
+    width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    scroll-snap-align: start;
     background-image: url(../img/partners/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
