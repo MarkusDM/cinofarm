@@ -133,8 +133,34 @@ ul li {
 .container {
     width: 157rem;
     margin: 0 auto;
-    min-height: 100vh;
+    
+    
 }
+
+
+.section {
+ 
+    scroll-snap-align: start;
+    height: 100vh;
+   
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   
+}
+
+.full {
+    flex-basis: 50%;
+    height: 100vh;
+    scroll-snap-points-y: repeat(100vh);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+	
+    
+}
+
+
 
 .hidden {
     overflow: hidden;

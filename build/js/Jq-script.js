@@ -20,45 +20,45 @@ $('.header__data-item').hover(function () {
 $('.popular__scroll-top').on('click', function() {
   $('html, body').animate({
     scrollTop: $("#focal").offset().top
-  }, 500);
+  }, 300);
 });        
    
          
 $('.focal__scroll').on('click', function() {
   $('html, body').animate({
     scrollTop: $("#popular").offset().top
-  }, 500);
+  }, 300);
 });     
     
 $('.popular__scroll-bottom').on('click', function() {
   $('html, body').animate({
     scrollTop: $("#news").offset().top
-  }, 500);
+  }, 300);
 });
 
 $('.news__scroll-top').on('click', function() {
   $('html, body').animate({
     scrollTop: $("#popular").offset().top
-  }, 500);
+  }, 300);
 }); 
 
 
 $('.news__scroll-bottom').on('click', function() {
   $('html, body').animate({
     scrollTop: $("#education").offset().top
-  }, 500);
+  }, 300);
 }); 
 
 $('.education__scroll-top').on('click', function() {
   $('html, body').animate({
     scrollTop: $("#news").offset().top
-  }, 500);
+  }, 300);
 }); 
 
 $('.education__scroll-bottom').on('click', function() {
   $('html, body').animate({
     scrollTop: $("#literature").offset().top
-  }, 500);
+  }, 300);
 });
 
 
@@ -67,46 +67,46 @@ $('.education__scroll-bottom').on('click', function() {
 $('.literature__scroll-top').on('click', function() {
   $('html, body').animate({
     scrollTop: $("#education").offset().top
-  }, 500);
+  }, 300);
 }); 
 
 $('.literature__scroll-bottom').on('click', function() {
   $('html, body').animate({
     scrollTop: $("#partners").offset().top
-  }, 500);
+  }, 300);
 });
 
 
 $('.partners__scroll-top').on('click', function() {
   $('html, body').animate({
     scrollTop: $("#literature").offset().top
-  }, 500);
+  }, 300);
 }); 
 
 $('.partners__scroll-bottom').on('click', function() {
   $('html, body').animate({
     scrollTop: $("#projects").offset().top
-  }, 500);
+  }, 300);
 });
 
 
 $('.projects__scroll-top').on('click', function() {
   $('html, body').animate({
     scrollTop: $("#partners").offset().top
-  }, 500);
+  }, 300);
 }); 
 
 $('.projects__scroll-bottom').on('click', function() {
   $('html, body').animate({
     scrollTop: $("#invitation").offset().top
-  }, 500);
+  }, 300);
 });
 
 
 $('.footer__scroll').on('click', function() {
   $('html, body').animate({
     scrollTop: $("#focal").offset().top
-  }, 500);
+  }, 300);
 }); 
 
 
@@ -150,9 +150,3 @@ $('.product__tab-item').click(function () {
 
 
 
-$(document).ready(function() {
-  $('#fullpage').fullpage({
-
-    scrollOverflow: true
-  });
-});

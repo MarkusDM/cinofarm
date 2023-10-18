@@ -1,24 +1,22 @@
 .projects {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
                                                                                                                                                                                               
     background-image: url(../img/projects/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 150%;
-    overflow: hidden;
+  
     
     .container {
         position: relative;
         padding-top: 5rem;
     }
 
-    &__pagination {
-        top: 61%;
-        transform: translate(0, -61%);
-       }
+    &__wrapper {
+        position: relative;
+    }
+
+  
     .title {
         flex-direction: column;
         display: flex;

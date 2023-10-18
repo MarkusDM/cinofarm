@@ -110,17 +110,7 @@ const projectsSwiper = new Swiper('.projects__swiper', {
 });
 
 
-window.addEventListener('wheel', function(e) {
-	e.preventDefault();
-	if (e.deltaY < 0) scrollToSection('first');
-	else scrollToSection('second');
-  });
-  
-  function scrollToSection(id) {
-	document.getElementById(id).scrollIntoView({
-	  behavior: 'smooth'
-	});
-  }
+
 
 
   ymaps.ready(function () {
@@ -177,3 +167,6 @@ window.addEventListener('wheel', function(e) {
         .add(myPlacemark)
         .add(myPlacemarkWithContent);
 });
+
+
+

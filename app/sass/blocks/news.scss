@@ -1,14 +1,10 @@
 .news {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    scroll-snap-align: start;
+
     background-image: url(../img/news/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 25%;
-    overflow: hidden;
+   
     .container {
         padding-top: 5rem;
     }
